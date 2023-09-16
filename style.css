@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Quicksand:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7ECE1; 
+   /* background-image: linear-gradient(to bottom, #F7ECE1 0%, #F7ECE1  50%, #C9ADA7 90%); */
+}
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sparky {
+    animation: spin 10s linear infinite;
+    width: 160px;
+    height: 160px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0turn);
+      }
+      to {
+        transform: rotate(1turn);
+      }
+    
+}
+
+.navlist {
+   /* padding: 1rem; */
+    display: flex;
+    justify-content: flex-end; 
+   /* align-items: center; */
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+}
+
+.navvy li {
+    list-style: none;
+    margin-right: 3rem; 
+}
+
+a:hover {
+    cursor: pointer;
+}
+.navvy li a {
+    text-decoration: none;
+    border-top: 3px solid #C9ADA7;
+    background-color: #FBFBF2;
+    padding: .3rem;
+    border-radius: 1rem;
+}
+
+.navvy li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #C9ADA7;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color: #C9ADA7;
+}
+
+.main {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border: solid 6px #FBFBF2;
+    border-radius: 1rem;
+    box-shadow: 3px 5px 25px #C9ADA7; 
+}
+
+.main-textarea {
+    display: flex;
+    align-items: center; 
+} 
+
+.headline {
+    width: 50%;
+}
+
+.headline-img img {
+    width: 93%;
+   /* text-align: center; */
+}
+
+.header {
+    text-align: center;
+    font-size: 1.3rem;
+    border-bottom: #C9ADA7 1.5px solid;
+    border-top: #C9ADA7 1.5px solid;
+}
+
+.main-p {
+    width: 50%;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2.5rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+
+.button-house {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.button-house button {
+    margin-right: 2rem;
+    padding: .1rem; 
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 3px 2px grey;
+    background-image: linear-gradient(to bottom, #FBFBF2 0%, #F7ECE1 50%, #C9ADA7 80%);
+    width: 100px; 
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.sparkle {
+    animation: spark 5s infinite; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes spark {
+    0%    { opacity: 1; }
+    40%   { opacity: .8; }
+    80%   { opacity: .0; }
+    100%  { opacity: .8; }
+}
+
+.project-area {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.project-area h2 {
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+}
+
+.project-container {
+    width:80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "one two"
+    "three four";
+    grid-gap: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+.project-box {
+    padding: 0 0 1.5rem .5rem;
+}
+
+.project-box a {
+    font-family: 'Italiana', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.number {
+    display: flex;
+    font-family: 'Italiana', serif;
+    font-size: 1.2rem;
+    padding: .8rem;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+
+.description {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FBFBF2;
+    min-height: 15rem;
+    border: solid 6px #FBFBF2;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 25px #C9ADA7;
+    font-size: 1.1rem;
+    line-height:1.7rem;
+}
+
+.one {
+    border: solid 3px #FBFBF2;
+    grid-area: one;
+    border: solid 6px #FBFBF2;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 25px #C9ADA7; 
+    background-color: #F7ECE1;
+}
+
+.two {
+    grid-area: two;
+    border: solid 6px #FBFBF2;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 25px #C9ADA7; 
+    background-color: #F7ECE1;
+}
+
+.three {
+    grid-area: three;
+    border: solid 6px #FBFBF2;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 25px #C9ADA7; 
+    background-color: #F7ECE1;
+}
+
+.four {
+    grid-area: four;
+    border: solid 6px #FBFBF2;
+    border-radius: .5rem;
+    box-shadow: 3px 5px 25px #C9ADA7; 
+    background-color: #F7ECE1;
+}
+
+.contact-area {
+    text-align: center;
+}
+
+#contact {
+    font-family: 'Italiana', serif;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+
+#form-name, #form-email, #form-text {
+    border-radius: .5rem;
+    padding: .5rem;
+} 
+
+#form-name, #form-email {
+    width: 75%; 
+    margin: 0 auto;
+    margin-bottom: .3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+#send {
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 2px 3px 2px grey;
+    background-image: linear-gradient(to bottom, #FBFBF2 0%, #F7ECE1 50%, #C9ADA7 80%);
+    width: 100px; 
+    height: 48px;
+    font-family: 'Italiana', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .3rem;
+}
+
+@media screen and (max-width: 880px) {
+
+    .top {
+         justify-content: center;
+     }
+    
+    #sparky {
+       width: 70px;
+       height: 70px;
+    }
+
+    .navlist{
+        font-size: 1.2rem;
+    }
+
+    .navvy li {
+       margin-right: .5rem;
+    }
+    .main {
+        margin-top: 0;
+    }
+    .headline {
+        display: none;
+    }
+
+    .header {
+        font-size: 1.1rem;
+
+    }
+
+    .main-p {
+        width: 100%;
+        font-size: 1rem;
+        padding: .5rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .description {
+        width: 65%;
+        font-size: 1rem;
+     }
+
+
+    .project-container {
+        width:80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "one" "two"
+        "three" "four";
+        grid-gap: 3rem;
+    }
+
+    .project-area {
+        margin-top: 2rem;
+    }
+
+    .button-house button { 
+        margin-right: .2rem;
+    }
+
+    .number {
+        justify-content: center;
+    }
+
+    .contact-area {
+        margin-top: 1rem;
+    }
+
+    form {
+        width: 55%;
+    }
+
+}
